@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
-    selector: 'ng-logo',
+    selector: 'app-ng-logo',
     template: `<svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 982 239"

@@ -1,0 +1,39 @@
+import { Component, Directive, ViewEncapsulation } from "@angular/core";
+
+@Component({
+    selector: '[app-pill]',
+    host: {
+        class:"pill",
+    },
+    template: '<ng-content/>',
+    styles: `    
+        .pill {
+            display: flex;
+            align-items: center;
+            --pill-accent: var(--bright-blue);
+            background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+            color: var(--pill-accent);
+            padding-inline: 0.75rem;
+            padding-block: 0.375rem;
+            border-radius: 2.75rem;
+            border: 0;
+            transition: background 0.3s ease;
+            font-family: var(--inter-font);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.4rem;
+            letter-spacing: -0.00875rem;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .pill:hover {
+            background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+        }
+    `,
+    encapsulation: ViewEncapsulation.None,
+})
+export class Pill {
+
+}

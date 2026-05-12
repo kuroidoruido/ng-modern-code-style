@@ -36,6 +36,7 @@ export default class SimpleComponent {
         'Pour @for, bien réfléchir au track',
         'Private par défaut, protected si besoin dans le template, jamais "default" (pas d\'indication = public) ou public',
         'Faire des petits composants, template court, le moins de logique possible dans le template, en single file si possible',
+        'input.required<Type>() autant que possible',
         'Même si on est en Angular : les trucs standard HTML/CSS/JS sont à privilégier',
         'Attention aux typings : pas de any (au pire unknown), favoriser les types implicites, ne pas hésiter à survoler les types pour vérifier que tout est bien typé',
     ];
