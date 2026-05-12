@@ -22,6 +22,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "AGENTS.md",
+                "input": ".",
+                "output": "/assets"
               }
             ],
             "styles": [
