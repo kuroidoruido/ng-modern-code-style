@@ -27,7 +27,7 @@ jobs:
         run: "npm ci"
 
       - name: Build step
-        run: "npm run build"
+        run: "npm run build -- --deploy-url /ng-modern-code-style/"
 
       - name: Upload static files as artifact
         id: deployment
