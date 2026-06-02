@@ -27,6 +27,11 @@
                 "glob": "AGENTS.md",
                 "input": ".",
                 "output": "/assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/demo",
+                "output": "/assets/demo"
               }
             ],
             "styles": [

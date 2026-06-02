@@ -19,6 +19,7 @@ import { PillsGroup } from "./pills/pills-group";
           <app-pill-inner-link title="Explore the AGENTS.md" link="/agents-md" />
           <app-pill-inner-link title="Simple component" link="/simple-component" />
           <app-pill-inner-link title="Components & Services" link="/components-and-services" />
+          <app-pill-inner-link title="Migrations" link="/migrations" />
         </app-pills-group>
       </div>
     </div>
@@ -37,7 +38,7 @@ import { PillsGroup } from "./pills/pills-group";
 
         h1 {
             font-size: 3.125rem;
-            color: var(--gray-900);
+            // color: var(--gray-900);
             font-weight: 500;
             line-height: 100%;
             letter-spacing: -0.125rem;

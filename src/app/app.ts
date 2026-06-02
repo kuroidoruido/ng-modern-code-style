@@ -19,19 +19,19 @@ import { Header } from "./feature/header/header";
   styles: `
     :host {
       display: block;
-      &.theme-light {
-        color: black;
-        background-color: white;
-      }
-      &.theme-dark {
-        color: white;
-        background-color: black;
-      }
+      // &.theme-light {
+      //   color: black;
+      //   background-color: white;
+      // }
+      // &.theme-dark {
+      //   color: white;
+      //   background-color: black;
+      // }
     }
     main {
         padding-bottom: 4rem;
         width: 100ch;
-        margin: 0 auto;   
+        margin: 0 auto;
     }
   `
 })
