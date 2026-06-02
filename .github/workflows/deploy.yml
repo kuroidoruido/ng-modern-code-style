@@ -33,4 +33,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "ng-modern-code-style"
+          entrypoint: "index.html"
           root: "./dist/ng-modern-code-style/browser/"
