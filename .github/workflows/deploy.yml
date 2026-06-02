@@ -11,8 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: write # Needed for auth with Deno Deploy
-      contents: read # Needed to clone the repository
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Clone repository
@@ -29,9 +34,19 @@ jobs:
       - name: Build step
         run: "npm run build"
 
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
         with:
-          project: "ng-modern-code-style"
-          entrypoint: "index.html"
-          root: "./dist/ng-modern-code-style/browser/"
+          path: dist/ng-modern-code-style/browser/
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
