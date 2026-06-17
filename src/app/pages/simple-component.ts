@@ -79,6 +79,14 @@ import { DemoCode } from "../components/demo-code";
                 </ul> 
             </blockquote>
         </app-collapse>
+        <app-collapse title="Use computed for formatting">
+            <p>Naive formatting will be done in the template. When it become more complex, traditional Angular coding style will encourage you to use Pipes.</p>
+            <p>If you don't need to reuse the formatting logic, in modern Angular codebase, prefer <code>computed()</code> to have something simpler and when you need to reuse the formatting logic extract it to a Pipe.</p>
+            <app-demo-code path="simple-component/09-use-computed-for-formatting.ts" component="PersonList" stepMark="_step_09" />
+            <blockquote>
+                <p>You can use pipes in yours computed if you need it: <code>computed(() => new DatePipe().transform(this.person().birthdate, 'dd/MM/yyyy'))</code> will work if you need it.</p>
+            </blockquote>
+        </app-collapse>
     `,
 	imports: [Collapse, DemoCode],
 })
