@@ -1,8 +1,8 @@
 import { Component, input, signal } from "@angular/core";
 
 @Component({
-    selector: 'app-collapse',
-    template: `
+	selector: "app-collapse",
+	template: `
         <details (toggle)="isOpen.set($event.newState === 'open')">
             <summary>{{title()}}</summary>
             @if (isOpen()) {
@@ -10,7 +10,7 @@ import { Component, input, signal } from "@angular/core";
             }
         </details>
     `,
-    styles: `
+	styles: `
     details {
         summary {
             cursor: pointer;
@@ -24,9 +24,9 @@ import { Component, input, signal } from "@angular/core";
             }
         }
     }
-    `
+    `,
 })
 export class Collapse {
-    public readonly title = input.required<string>();
-    protected readonly isOpen = signal<boolean>(false);
+	public readonly title = input.required<string>();
+	protected readonly isOpen = signal<boolean>(false);
 }

@@ -2,8 +2,8 @@ import { Component, input } from "@angular/core";
 import { Pill } from "./pill";
 
 @Component({
-    selector: 'app-pill-link',
-    template: `
+	selector: "app-pill-link",
+	template: `
         <a app-pill [href]="link()" target="_blank" rel="noopener">
             <span>{{title()}}</span>
             <svg
@@ -17,14 +17,14 @@ import { Pill } from "./pill";
             </svg>
         </a>
     `,
-    styles: `        
+	styles: `        
         svg {
             margin-inline-start: 0.25rem;
         }
     `,
-    imports: [Pill]
+	imports: [Pill],
 })
 export class PillLink {
-    public readonly title = input.required<string>();
-    public readonly link = input.required<string>();
+	public readonly title = input.required<string>();
+	public readonly link = input.required<string>();
 }

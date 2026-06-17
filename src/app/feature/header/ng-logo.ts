@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
-    selector: 'app-ng-logo',
-    template: `<svg
+	selector: "app-ng-logo",
+	template: `<svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 982 239"
         fill="none"
@@ -47,8 +47,8 @@ import { Component, ViewEncapsulation } from "@angular/core";
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>`,
-      encapsulation: ViewEncapsulation.None,
-      styles: `
+	encapsulation: ViewEncapsulation.None,
+	styles: `
       svg {
         --height: 0.9em;
         --width: calc(4 * var(--height));
@@ -57,6 +57,6 @@ import { Component, ViewEncapsulation } from "@angular/core";
         max-height: var(--height);
         margin-bottom: calc(-0.15 * var(--height));
       }
-      `
+      `,
 })
 export class NgLogo {}

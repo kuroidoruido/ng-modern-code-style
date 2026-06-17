@@ -3,8 +3,8 @@ import { Collapse } from "../components/collapse";
 import { DemoCode } from "../components/demo-code";
 
 @Component({
-    selector: 'simple-component',
-    template: `
+	selector: "simple-component",
+	template: `
         <h1>Simple Component</h1>
         <app-collapse title="Let's start with a simple component">
             <p>Here we have a simple component that displays a list of people. Nothing fancy, just a basic *ngFor to loop through the list and display each person's name.</p>
@@ -80,7 +80,6 @@ import { DemoCode } from "../components/demo-code";
             </blockquote>
         </app-collapse>
     `,
-    imports: [Collapse, DemoCode],
+	imports: [Collapse, DemoCode],
 })
-export default class SimpleComponent {
-}
+export default class SimpleComponent {}

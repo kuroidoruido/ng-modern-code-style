@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'personList_step_01',
-    template: `
+	selector: "personList_step_01",
+	template: `
 <!-- [!code highlight:1] -->
         @for (person of people; track $index) {
             <div class="card">
@@ -11,7 +11,7 @@ import { Component } from "@angular/core";
 <!-- [!code highlight:1] -->
         }
     `,
-    styles: `
+	styles: `
         :host {
             display: flex;
             gap: 0.25em;
@@ -24,12 +24,12 @@ import { Component } from "@angular/core";
     `,
 })
 export class PersonList {
-    people: any[] = [
-        { id: '0', firstname: 'Aïcha', lastname: 'Diallo' },
-        { id: '1', firstname: 'Lucas', lastname: 'Martinez' },
-        { id: '2', firstname: 'Léa', lastname: 'Nguyen' },
-        { id: '3', firstname: 'Karim', lastname: 'Benali' },
-        { id: '4', firstname: 'Mei', lastname: 'Chen' },
-        { id: '5', firstname: 'Élodie', lastname: 'Moreau' },
-    ];
+	people: any[] = [
+		{ id: "0", firstname: "Aïcha", lastname: "Diallo" },
+		{ id: "1", firstname: "Lucas", lastname: "Martinez" },
+		{ id: "2", firstname: "Léa", lastname: "Nguyen" },
+		{ id: "3", firstname: "Karim", lastname: "Benali" },
+		{ id: "4", firstname: "Mei", lastname: "Chen" },
+		{ id: "5", firstname: "Élodie", lastname: "Moreau" },
+	];
 }

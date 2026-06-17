@@ -5,8 +5,8 @@ import { PillLink } from "./pills/pill-link";
 import { PillsGroup } from "./pills/pills-group";
 
 @Component({
-    selector: 'app-header',
-    template: `
+	selector: "app-header",
+	template: `
       <header>
     <div class="content">
       <div class="left-side">
@@ -25,7 +25,7 @@ import { PillsGroup } from "./pills/pills-group";
     </div>
   </header>
   `,
-  styles: `
+	styles: `
     header {
         width: 100%;
         height: fit-content;
@@ -95,6 +95,6 @@ import { PillsGroup } from "./pills/pills-group";
         }
     }
     `,
-  imports: [NgLogo, PillLink, PillInnerLink, PillsGroup],
+	imports: [NgLogo, PillLink, PillInnerLink, PillsGroup],
 })
 export class Header {}

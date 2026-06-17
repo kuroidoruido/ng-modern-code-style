@@ -1,13 +1,13 @@
 import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
-    selector: 'app-pills-group',
-    template: `
+	selector: "app-pills-group",
+	template: `
         <div class="pill-group">
             <ng-content />
         </div>
         `,
-    styles: `
+	styles: `
         .pill-group {
             display: flex;
             flex-direction: column;
@@ -38,6 +38,6 @@ import { Component, ViewEncapsulation } from "@angular/core";
             }
         }
     `,
-    encapsulation: ViewEncapsulation.None,
+	encapsulation: ViewEncapsulation.None,
 })
 export class PillsGroup {}

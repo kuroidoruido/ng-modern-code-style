@@ -1,12 +1,12 @@
-import { Component, Directive, ViewEncapsulation } from "@angular/core";
+import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
-    selector: '[app-pill]',
-    host: {
-        class:"pill",
-    },
-    template: '<ng-content/>',
-    styles: `    
+	selector: "[app-pill]",
+	host: {
+		class: "pill",
+	},
+	template: "<ng-content/>",
+	styles: `    
         .pill {
             display: flex;
             align-items: center;
@@ -32,8 +32,6 @@ import { Component, Directive, ViewEncapsulation } from "@angular/core";
             background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
         }
     `,
-    encapsulation: ViewEncapsulation.None,
+	encapsulation: ViewEncapsulation.None,
 })
-export class Pill {
-
-}
+export class Pill {}

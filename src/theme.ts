@@ -1,19 +1,19 @@
 import { Injectable } from "@angular/core";
 import { ReplaySubject } from "rxjs";
 
-@Injectable({  providedIn: 'root' })
+@Injectable({ providedIn: "root" })
 export class ThemeService {
-    private theme = new ReplaySubject<'light' | 'dark'>(1);
+	private theme = new ReplaySubject<"light" | "dark">(1);
 
-    constructor() {
-        this.setTheme('light');
-    }
+	constructor() {
+		this.setTheme("light");
+	}
 
-    setTheme(theme: 'light' | 'dark') {
-        this.theme.next(theme);
-    }
+	setTheme(theme: "light" | "dark") {
+		this.theme.next(theme);
+	}
 
-    getTheme() {
-        return this.theme.asObservable();
-    }
+	getTheme() {
+		return this.theme.asObservable();
+	}
 }

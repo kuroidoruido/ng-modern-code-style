@@ -1,0 +1,12 @@
+{
+  "files": {
+    "includes": ["src/**/*.ts", "src/**/*.html", "*.json", "knip.ts"]
+  },
+  "formatter": {
+    "includes": ["**"],
+    "lineWidth": 120
+  },
+  "linter": {
+    "includes": ["**", "!src/demo/**"]
+  }
+}

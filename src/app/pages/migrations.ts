@@ -1,10 +1,9 @@
 import { Component } from "@angular/core";
 import { Collapse } from "../components/collapse";
-import { DemoCode } from "../components/demo-code";
 
 @Component({
-    selector: 'simple-component',
-    template: `
+	selector: "simple-component",
+	template: `
         <h1>Migrations</h1>
         <app-collapse title="Versions one by one">
             <p>Especially when we have late, it can be frustrating to make version migration one by one. But it's very important to doing it like that!</p>
@@ -48,7 +47,6 @@ import { DemoCode } from "../components/demo-code";
             <p>Before your <code>npm ci</code>, don't forget to delete your <code>node_modules</code>!</p>
         </app-collapse>
     `,
-    imports: [Collapse],
+	imports: [Collapse],
 })
-export default class SimpleComponent {
-}
+export default class SimpleComponent {}

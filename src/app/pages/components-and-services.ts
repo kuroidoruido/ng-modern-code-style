@@ -1,10 +1,10 @@
-import { Component, inject } from "@angular/core";
-import { DemoCode } from "../components/demo-code";
+import { Component } from "@angular/core";
 import { Collapse } from "../components/collapse";
+import { DemoCode } from "../components/demo-code";
 
 @Component({
-    selector: 'components-and-services',
-    template: `
+	selector: "components-and-services",
+	template: `
     <h1>Components & Services</h1>
     <app-collapse title="Let's start with a simple component">
         <p>Here we have a pretty classical component which grab some data with an http call then display the result.</p>
@@ -80,6 +80,6 @@ import { Collapse } from "../components/collapse";
         <p>Using a simple <code>shareReplay(1)</code> will make the trick here and cover a lot of use cases: making the call when needed the first time, keep it in memory as long as at least one component use it, give the latest value to any new subscriber, free the memory when no one subscribe.</p>
     </app-collapse>
     `,
-    imports: [DemoCode, Collapse]
+	imports: [DemoCode, Collapse],
 })
 export default class ComponentsAndServices {}
