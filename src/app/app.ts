@@ -1,15 +1,10 @@
-import { Component, computed, inject } from "@angular/core";
-import { toSignal } from "@angular/core/rxjs-interop";
+import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
-import { ThemeService } from "../theme";
 import { Header } from "./feature/header/header";
 
 @Component({
 	selector: "app-root",
 	imports: [RouterOutlet, Header],
-	host: {
-		"[class]": "classes()",
-	},
 	template: `
     <app-header />
     <main class="main">
@@ -19,14 +14,6 @@ import { Header } from "./feature/header/header";
 	styles: `
     :host {
       display: block;
-      // &.theme-light {
-      //   color: black;
-      //   background-color: white;
-      // }
-      // &.theme-dark {
-      //   color: white;
-      //   background-color: black;
-      // }
     }
     main {
         padding-bottom: 4rem;
@@ -35,7 +22,4 @@ import { Header } from "./feature/header/header";
     }
   `,
 })
-export class App {
-	protected readonly theme = toSignal(inject(ThemeService).getTheme());
-	protected readonly classes = computed(() => ({ [`theme-${this.theme() ?? "light"}`]: true }));
-}
+export class App {}
