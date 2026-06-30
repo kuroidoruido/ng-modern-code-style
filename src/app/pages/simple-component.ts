@@ -61,7 +61,7 @@ import { DemoCode } from "../components/demo-code";
             <p>In Angular, we may use <code>app</code> prefix selector follow by a kebab-case name for component or camelCase for directive. This is inherited from the Web Component specification and we should follow this rather it works without it.</p>
             <p>Follow this convention allow any developer to know which tags in our template is a component from the app, a component from a lib (most of libs have a dedicated prefix, like Angular Material which use <code>mat-then-kabab-case</code> for component or <code>matThenCamelCase</code> for directive)</p>
             <p>Also, prefer name your variables/properties in camelCase except for constants ones where you should prefer SCREAMING_SNAKE_CASE.</p>
-            <app-demo-code path="simple-component/08-use-naming-conventions.ts" component="PersonList" stepMark="_step_07" />
+            <app-demo-code path="simple-component/08-use-naming-conventions.ts" component="PersonList" stepMark="_step_08" />
 
             <blockquote>
                 <p>Remember the casing names:</p>
