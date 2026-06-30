@@ -1,11 +1,11 @@
 import { type ApplicationConfig, EnvironmentProviders, provideAppInitializer, provideBrowserGlobalErrorListeners, Provider } from "@angular/core";
-import { provideRouter } from "@angular/router";
+import { provideRouter, withHashLocation } from "@angular/router";
 
 import { routes } from "./app.routes";
 import { APP_BASE_HREF } from "@angular/common";
 
 export const appConfig: ApplicationConfig = {
-	providers: [provideBrowserGlobalErrorListeners(), provideAppBaseHref(), provideRouter(routes)],
+	providers: [provideBrowserGlobalErrorListeners(), provideAppBaseHref(), provideRouter(routes, withHashLocation())],
 };
 
 function provideAppBaseHref(): Provider | EnvironmentProviders {
