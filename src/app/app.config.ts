@@ -1,4 +1,4 @@
-import { type ApplicationConfig, EnvironmentProviders, provideAppInitializer, provideBrowserGlobalErrorListeners, Provider } from "@angular/core";
+import { type ApplicationConfig, EnvironmentProviders, provideBrowserGlobalErrorListeners, Provider } from "@angular/core";
 import { provideRouter, withHashLocation } from "@angular/router";
 
 import { routes } from "./app.routes";
