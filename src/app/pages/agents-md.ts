@@ -1,6 +1,5 @@
-import { APP_BASE_HREF } from "@angular/common";
 import { httpResource } from "@angular/common/http";
-import { Component, computed, inject } from "@angular/core";
+import { Component, computed } from "@angular/core";
 
 @Component({
 	selector: "agents-md",
@@ -23,7 +22,6 @@ import { Component, computed, inject } from "@angular/core";
     `,
 })
 export default class AgentsMd {
-    private readonly baseHref = inject(APP_BASE_HREF);
-	protected readonly md = httpResource.text(() => ({ url: `${this.baseHref}assets/AGENTS.md`, defaultValue: "loading..." }));
+	protected readonly md = httpResource.text(() => ({ url: "/assets/AGENTS.md", defaultValue: "loading..." }));
 	protected readonly errors = computed(() => JSON.stringify(this.md.error(), undefined, 2));
 }

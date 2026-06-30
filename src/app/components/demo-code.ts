@@ -1,4 +1,4 @@
-import { APP_BASE_HREF, NgComponentOutlet } from "@angular/common";
+import { NgComponentOutlet } from "@angular/common";
 import { HttpClient } from "@angular/common/http";
 import { Component, inject, input, resource, ViewEncapsulation } from "@angular/core";
 import { rxResource } from "@angular/core/rxjs-interop";
@@ -56,7 +56,6 @@ export class DemoCode {
 	protected readonly uuid = crypto.randomUUID();
 	private readonly http = inject(HttpClient);
 	private readonly sanitizer = inject(DomSanitizer);
-	private readonly baseHref = inject(APP_BASE_HREF);
 	protected readonly code = rxResource({
 		params: () => ({ path: this.path() }),
 		stream: ({ params }) => this.loadCode(params.path),
@@ -67,7 +66,7 @@ export class DemoCode {
 	});
 
 	private loadCode(path: string): Observable<SafeHtml> {
-		return this.http.get(`${this.baseHref}assets/demo/${path}`, { responseType: "text" }).pipe(
+		return this.http.get(`/assets/demo/${path}`, { responseType: "text" }).pipe(
 			map((code) => code.replaceAll(this.stepMark(), "")),
 			switchMap(hightlightCode),
 			map((html) => this.sanitizer.bypassSecurityTrustHtml(html)),
