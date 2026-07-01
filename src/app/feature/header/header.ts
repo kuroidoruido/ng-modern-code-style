@@ -10,7 +10,7 @@ import { PillsGroup } from "./pills/pills-group";
       <header>
     <div class="content">
       <div class="left-side">
-        <h1>Let's play with the modern <app-ng-logo /> code style! 🤓</h1>
+        <h1 i18n>Let's play with the modern <app-ng-logo /> code style! 🤓</h1>
       </div>
       <div class="divider" role="separator" aria-label="Divider"></div>
       <div class="right-side">

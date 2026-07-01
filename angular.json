@@ -18,6 +18,7 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
+            "localize": true,
             "assets": [
               {
                 "glob": "**/*",
@@ -61,6 +62,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fr": {
+              "localize": ["fr"]
             }
           },
           "defaultConfiguration": "production"
@@ -73,12 +77,27 @@
             },
             "development": {
               "buildTarget": "ng-modern-code-style:build:development"
+            },
+            "fr": {
+              "buildTarget": "ng-modern-code-style:build:development,fr"
             }
           },
           "defaultConfiguration": "development"
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        }
+      },
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.xlf",
+            "subPath": ""
+          },
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf"
+          }
         }
       }
     }

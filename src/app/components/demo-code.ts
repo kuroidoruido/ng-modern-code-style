@@ -12,7 +12,7 @@ import { codeToHtml } from "shiki/bundle/web";
 	template: `
         <div class="code" [innerHTML]="code.value()"></div>
         <div class="preview" [attr.data-preview-path]="path()">
-            <p [id]="uuid"><span>Preview</span></p>
+            <p [id]="uuid"><span i18n>Preview</span></p>
             <div class="preview-container" [aria-labelledby]="uuid"><ng-container *ngComponentOutlet="previewComponent.value()" /></div>
         </div>
     `,

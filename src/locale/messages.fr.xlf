@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1295614462098694869" datatype="html">
+        <source>Preview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/demo-code.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5493774585624592130" datatype="html">
+        <source>Jouons avec le code style moderne d'<x id="START_TAG_APP_NG_LOGO" ctype="x-app_ng_logo" equiv-text="&lt;app-ng-logo /&gt;"/><x id="CLOSE_TAG_APP_NG_LOGO" ctype="x-app_ng_logo" equiv-text="&lt;app-ng-logo /&gt;"/> ! 🤓</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/feature/header/header.ts</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7894964224418487343" datatype="html">
+        <source>Ce fichier est prévu pour guider les Agents IA mais il peut aussi être très utile aux humains comme il donne un guide de codage concis et officiel !</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/agents-md.ts</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5477408609428156245" datatype="html">
+        <source>Ce n'est pas un guide parfait mais il donne une direction simple.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/agents-md.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5301216856600714331" datatype="html">
+        <source>Components &amp; Services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4522490340745493473" datatype="html">
+        <source>Commençons avec un composant simple</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6952463829746447455" datatype="html">
+        <source>Voici un composant plutôt classique qui récupère des données via un appel http puis affiche le résultat.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7530194509693633213" datatype="html">
+        <source>Mais on y retrouve tellement de (très) vieille / trop mauvaise pratiques...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8385697454191123614" datatype="html">
+        <source>Utilise inject()</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8072323174853161912" datatype="html">
+        <source>Utiliser l'injection dans le <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>constructor()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> va parfois vous obliger à différer l'initialization du composant, créer un peu de complexité, séparer vos propriétés entre deux emplacements (la racine de votre classe et les paramètres du constructeur).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3951466302411363339" datatype="html">
+        <source>En Angular Moderne, on a la fonction <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>inject()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> pour directement injecter ce dont on a besoin comme des propriétés de la classe. Ça va aussi simplifier l'ordonnancement d'injection à l'intérieur de vos composant, et ce sera d'ailleurs la seule façon d'injecter des choses avec le futur avec le décorateur <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>@Service()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> (qui sera la manière recommandé de créer des services à partir d'Angular v22).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3857879748297670378" datatype="html">
+        <source>Ici nous avons supprimé le <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>constructor()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> pour directement injecter l'<x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>HttpClient<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> dans l'initilization des propriétés. Ça rend le code plus simple et plus clair.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="987094513524981543" datatype="html">
+        <source>Évitez ngOnInit()</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7694088229749622015" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>ngOnInit()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> est un héritage des début d'Angular 2. Depuis Angular 16, ce hook est devenu plutôt inutile, et on peut mettre tout ce qui est historiquement dans <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>ngOnInit()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> directement dans la méthode <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>constructor()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4954283842669696483" datatype="html">
+        <source>Faire ça va vous permettre d'utiliser le compilateur TypeScript pour vous aider à tout initialiser et aussi simplifier le cycle de vie de votre composant.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3503404955985871586" datatype="html">
+        <source>Ici on renomme <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>ngOnInit()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> en <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>constructor()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> et on supprime l'implémentation de <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>OnInit<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Ça réduit le boilerplate, ça simplifie aussi un peu le code.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1044565456833569097" datatype="html">
+        <source>Typez les sources de données</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7739285510579185790" datatype="html">
+        <source>Plus vous typez les sources de données, moins vous devrez mettre de typage explicite, plus le compilateur TypeScript pourra vous aider.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6456378894241175295" datatype="html">
+        <source>Évitez de subscribe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="619927071033162367" datatype="html">
+        <source>Depuis le début de l'utilistaion de RxJS dans Angular, on peut voir beaucoup d'erreur avec les <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>.subscribe()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Chaque fois qu'on subscribe, il faut qu'on unsubscribe ! Sauf si on ne fait jamais de subscribe !</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4570461280403413521" datatype="html">
+        <source>En Angular, Il y a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>AsyncPipe<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> qui est là pour gérer correctement la souscription/désouscption automatiquement quand le composant est créé/détruit. Utilisez-le partout autant que possible.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7700585127731530524" datatype="html">
+        <source>When you need some data outside the template (and here you cannot use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>AsyncPipe<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>), you may use the <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>takeUntilDetroyed()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> operator, that will help you to handle correctly the unsubscription.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4076615719122361855" datatype="html">
+        <source>Here, we moved the http call Observable to the property initialization. We follow the RxJS convention placing a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>$<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> at the end of the property name. And we can remove the <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>constructor()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. Using the <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>AsyncPipe<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> we directly indicate to Angular to handle the subscription and we use the Observable pretty much a simple property.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4545710485016722896" datatype="html">
+        <source>As we never subscribe to the Observable, we don&apos;t need to unsubscribe. Angular will subscribe and unsubscribe when needed for us.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8754005737260254851" datatype="html">
+        <source>You can also notice we do not need to repeat any type here: the <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>http.get()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> is typed and the type is implicitly propagate everywhere (templates included).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1524623008855658140" datatype="html">
+        <source>Use inject directly without intermediary properties when possible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4056767548050972078" datatype="html">
+        <source>A lot of people will declare there injected services, them use them. If you only need the service once, you can directly inject the service in the same code row than the usage (also work in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>constructor()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for example).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6555680061029939754" datatype="html">
+        <source>It changes pretty nothing to the readability, it only reduce a little bit the amount of code, but it indicate explicitly to future developer that the service is only used once and it can prevent some mental check when debugging.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3048564077788479819" datatype="html">
+        <source>Move data manipulation to services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="972561905744122308" datatype="html">
+        <source>Components are for display thing, services are for manipulate data and share things.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2001092837374789229" datatype="html">
+        <source>As much possible, you should move data manipulation to services. It will help you reuse the code, simplify the testing, keep responsibility clear.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2773705672640577295" datatype="html">
+        <source>We can see the http call code has moved to the service with a method to get access to it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2747510048649651336" datatype="html">
+        <source>We prefer having method to let us refactor easily if needed in the future, reducing code impact.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7369629724881526985" datatype="html">
+        <source>As always: keep everything as much possible <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>private readonly<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> in your services and them open what is need to reduce the API of your services.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5344153657414096525" datatype="html">
+        <source>Prefer Signals in components</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7501193289187634235" datatype="html">
+        <source>Managing Observable directly in the template will perfectly work, but we can make simpler thing today using Signals.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3246346010229630491" datatype="html">
+        <source>The simpler refactor is to use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>toSignal()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to transform our Observable to a Signal. This is what we used bellow.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6330059522331507029" datatype="html">
+        <source>If you need to track loading, errors, etc. you can use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>rxResource()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to have more information about the Observable state.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5646974345323203268" datatype="html">
+        <source>Init all Signals</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1525741080369872482" datatype="html">
+        <source>A Signal is a box which give access to the inner value at any time. What happen if you get access to the value of the signal before the Observable resolve? It will give you <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>null<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. It&apos;s preferable to initialize the Signal to avoid this.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6343993889751404089" datatype="html">
+        <source>Here we initialize with empty array, but in some case you may want a more elaborate default value.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6568276850719192793" datatype="html">
+        <source>Handle errors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="221093680629938371" datatype="html">
+        <source>I see a lot of application that does nothing about errors. If you have no idea about errors that can happen you can basically: print them in the console + return a default value; at least, it will help you identify the issues.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5343361090906231926" datatype="html">
+        <source>You can have a better error handling strategy: retries, refresh token (on http 401), trigger a toast, lock the app (to avoid the users to crash everything on backend side), etc. With RxJS everything of this is pretty easy to implement.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="887410431496502746" datatype="html">
+        <source>Share resource call result</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1244869994072741895" datatype="html">
+        <source>Except you do have a state manager (NgRX for example), you probably often want getting access to the service data on multiple place in your application.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4502206264058170102" datatype="html">
+        <source>The simplest way to doing so is to make the call in the parent component, then drilling it through props from component to component.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1344263769093544860" datatype="html">
+        <source>The best way to doing that is maybe to handle this from the service. This way every components will make dumb calls to the service and the data management is kept in the service. With RxJS we can make it very easily!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1924275675087051438" datatype="html">
+        <source>In our example:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6256233153721994499" datatype="html">
+        <source>Using a simple <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>shareReplay(1)<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> will make the trick here and cover a lot of use cases: making the call when needed the first time, keep it in memory as long as at least one component use it, give the latest value to any new subscriber, free the memory when no one subscribe.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/components-and-services.ts</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4677343964400903853" datatype="html">
+        <source>In this tiny website, I will try to keep an up to date version of my own way of coding in Angular. I do not pretend to make neither a perfect nor official guideline, just give you a simple guideline based on my everyday coding experience.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home.ts</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5313469620465743299" datatype="html">
+        <source>Versions one by one</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6361829772759103460" datatype="html">
+        <source>Especially when we have late, it can be frustrating to make version migration one by one. But it&apos;s very important to doing it like that!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5936289031303436588" datatype="html">
+        <source>First point: the Angular CLI will not let you upgrade more than one major version.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2504263430342979213" datatype="html">
+        <source>Then, it can be difficult to identify whats break up when you do not test every major update.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8452891792057669402" datatype="html">
+        <source>Major version update are not painful if you follow as much possible Angular recommendations. So you can make them easily. The longest part is to test the app, and here it&apos;s important to have a proper testing strategy (if you have a good automated testing stack, you will be able to be confident the update was successful very fast!).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1456386646694317238" datatype="html">
+        <source>Ensure you do not have any Angular lib that depends to the current version of Angular you are using</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2551743718175872310" datatype="html">
+        <source>Before any update, you should inspect your <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>package.json<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to find any angular related lib you have.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4124841829044314408" datatype="html">
+        <source>Most Angular libs use the <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>ngx-<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> prefix, but some don&apos;t, so be attentive!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8765251209528736164" datatype="html">
+        <source>Don&apos;t hesitate to use tools like <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://knip.dev&quot;&gt;"/>Knip<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> to identify useless dependencies.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5041578085561987365" datatype="html">
+        <source>Read the update blog post</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3533479738072029573" datatype="html">
+        <source>The Angular Team push official framework update on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://blog.angular.dev/&quot;&gt;"/>official blog<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Read it before update. It will help you a lot!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="18835269346046388" datatype="html">
+        <source>Don&apos;t hesitate to read the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://blog.ninja-squad.fr/&quot;&gt;"/>Ninja Squad blog<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> posts too. The Ninja Squad team provide very precise information about the updates, with a different approach than the official blog.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="628194702606223405" datatype="html">
+        <source>Never use --force / --legacy-peer-deps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2601113370761268516" datatype="html">
+        <source>There is some cases where <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> or the Angular CLI will prompt you that you can use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>--force<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>--legacy-peer-deps<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to bypass dependency resolution issues, and it most cases it will break thing directly or in a more subtile way you will pay in the future.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3671658481299045836" datatype="html">
+        <source>As much possible: never use these options and find another solution!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="608052820262599035" datatype="html">
+        <source>Follow Angular update guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8592970581792107396" datatype="html">
+        <source>The Angular Team maintain a clear, step by step, update guide <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://angular.dev/update-guide&quot;&gt;"/>here<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3946749982943538467" datatype="html">
+        <source>You should follow it!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1485711059194463128" datatype="html">
+        <source>Use the CLI</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3261478095678151754" datatype="html">
+        <source>Just to be sure: USE THE CLI.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2847992079654725155" datatype="html">
+        <source>Never ever do manual updates! The Angular CLI is designed to handle updates safely and efficiently. It is also design to tackle the migration breaking changes automatically as much as possible.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="577059823882714596" datatype="html">
+        <source>Use Anguclar Can I Use</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7115461844049115952" datatype="html">
+        <source>Use <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.angular.courses/caniuse?tab=features&quot;&gt;"/>Angular Can I Use<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> (not an official tool, but made by a passionate developer, which gives a lot of energy to keep it up to date) to ensure what can be migrate, especially if you are in late (not on the latest version).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="881249006156637343" datatype="html">
+        <source>This tool will help you identify which features are available in which versions, and if you can run migration scripts on the version you are updating to.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6721156485627552194" datatype="html">
+        <source>I think it&apos;s the best tool to keep modernizing your Angular app!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5436233645525400213" datatype="html">
+        <source>Ensure every deps are up to date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7181377712740305970" datatype="html">
+        <source>Update Angular is great, but upgrade all deps are as important!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6914683014126293448" datatype="html">
+        <source>I saw a lot of project which have an update to date Angular version, but everything beside is pretty old, deprecated and problematic.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5572035640945883775" datatype="html">
+        <source>Ensure you have update everything to an recent version!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="77317282492735726" datatype="html">
+        <source>Re-run npm ci</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5879514248779192284" datatype="html">
+        <source>Sometimes we can have some surprises when updating dependencies. Re-running <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm ci<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> can help ensure a clean installation, and also ensure all coworkers will not have any issue.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="425434321011269975" datatype="html">
+        <source>Before your <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm ci<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, don&apos;t forget to delete your <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>node_modules<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/migrations.ts</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="250406328646214427" datatype="html">
+        <source>Here we have a simple component that displays a list of people. Nothing fancy, just a basic *ngFor to loop through the list and display each person&apos;s name.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5126603040088704005" datatype="html">
+        <source>But it use a lot of old practices...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="656530038696519034" datatype="html">
+        <source>No more *ngFor/*ngIf/*ngSwitch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7178993706267502885" datatype="html">
+        <source>From Angular 17, we should use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>@for<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>@if<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> and <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>@switch<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> (rather than *ngFor, *ngIf, *ngSwitch).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="133944552467955721" datatype="html">
+        <source>Ditching out the structural directive will improve readability but also the rending speed (you can expect up to x5 speedup).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2782861690442828532" datatype="html">
+        <source>Pay attention to the track</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4180773099094321712" datatype="html">
+        <source>When using @for, always specify a track expression to improve performance.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7054243135101188946" datatype="html">
+        <source>By default, a lot of people will use $index to make it compile but it&apos;s a bad habit as it&apos;s not resilient to the list sort or adding new item. Prefer as much possible a consistent tracking identifier.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6537850493841344067" datatype="html">
+        <source>In our example, we can use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>person.id<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8205229118130510149" datatype="html">
+        <source>Make everything private readonly by default, and open on need</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4673814600898226529" datatype="html">
+        <source>By default, everything we declare in the class of our component is public (everything is public by default in a TypeScript class, so it&apos;s the same for services, etc.). It can be difficult to track what is used and where. Also by default, everything is mutable, so it can be difficult to track what is really edited during the component lifecycle.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6443063897765598619" datatype="html">
+        <source>To improve that, it&apos;s recommanded to make every method <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>private<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> by default, and every properties <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>private readonly<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. If you need to access it from the template you can use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>protected<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>. You should use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>public<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> only for inputs.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9188353886173907384" datatype="html">
+        <source>In this example, we can make <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>protected readonly<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> the <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>people<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> property as it has only read access and have access from the template.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4262506046679859236" datatype="html">
+        <source>If we make it <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>private<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>, we will have an Angular compilation error &quot;Property &apos;people&apos; is private and only accessible within class &apos;PersonList&apos;.&quot; so we will know instantly what we should do to fix it this.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4394964629577380683" datatype="html">
+        <source>Make small components</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5097887422248126831" datatype="html">
+        <source>As much as possible, we should make small components.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4525686738465184106" datatype="html">
+        <source>Small components does not means every time reusable components, but small concern.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7731553699851300843" datatype="html">
+        <source>Here we can extract the person card into a separate component. It have a single responsibility, and if the card component grow up we will be able to manage it more easily.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2444736151502411816" datatype="html">
+        <source>Also prefer single file component (SFC). It will force you to keep component small (big component imply big file with SFC) and also let you see the full code of one component without switching files (in the example, we have only a small template, and the component stay easily readable).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="957543230011096127" datatype="html">
+        <source>Don&apos;t forget a component is only a class and it&apos;s not mandatory to have a dedicated file for each component. If it makes sense to keep component together, keep them together.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8241158280621432934" datatype="html">
+        <source>Use input.required&lt;Type&gt;() as much as possible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8447154351275319682" datatype="html">
+        <source>A lot of component cannot work without some or all of their inputs. Make them required explicitly as much as possible to make it verified compiled-time.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8594376552597498642" datatype="html">
+        <source>If you do so, you will gain two things:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28721901150703795" datatype="html">
+        <source>Compiler will help you to set the minimal inputs list to a component;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3922784676864005285" datatype="html">
+        <source>Compiler will help you to find any wrong usage when you add the required;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5053235252180855588" datatype="html">
+        <source>Use the platform</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4364556710269235469" datatype="html">
+        <source>A lot of thing can be done with plan HTML, or plain CSS or at last plain JavaScript. Using framework specific libraries will lock you with the maintainer and can be painful in the future. Platform API is stable from the last decades.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2687080980637668956" datatype="html">
+        <source>For example: cookies, storages, styles do not need libraries in my humble opinion.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4364208582440925559" datatype="html">
+        <source>In this example we use plain CSS to have different border color in light or dark theme.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4729595495454024478" datatype="html">
+        <source>Use the correct typing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3457521687926432794" datatype="html">
+        <source>Ensure to type every data sources to ensure TypeScript will help you to avoid a lot of errors.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2831530126779370152" datatype="html">
+        <source>In this example, we defined a <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>Person<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> interface which is used rather than <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>any<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2936557860440887864" datatype="html">
+        <source>Use Angular naming conventions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8129822125431048531" datatype="html">
+        <source>In Angular, we may use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>app<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> prefix selector follow by a kebab-case name for component or camelCase for directive. This is inherited from the Web Component specification and we should follow this rather it works without it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="199850562813012658" datatype="html">
+        <source>Follow this convention allow any developer to know which tags in our template is a component from the app, a component from a lib (most of libs have a dedicated prefix, like Angular Material which use <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>mat-then-kabab-case<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for component or <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>matThenCamelCase<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> for directive)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="676341804724026749" datatype="html">
+        <source>Also, prefer name your variables/properties in camelCase except for constants ones where you should prefer SCREAMING_SNAKE_CASE.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2299729228768523445" datatype="html">
+        <source>Remember the casing names:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9001987966191512063" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>kebab-case<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> is all lower case letters with words separated with dash like if a kebab spit was traversing the words (often used in HTML or CSS);</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9059192363050532052" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>snake_case<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> is all lower case letters with underscore between words like a crawling snake;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3563214334455407984" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>camelCase<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> is first lower letter then a capital first letter for every next word (for JavaScript/TypeScript variables) like the hump from a camel;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3151779855277537587" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>PascalCase<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> is a capital first letter for every words (historically it comes from the Pascal language);</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5105837063945620183" datatype="html">
+        <source>There is also SCREAMING variants:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2768147546923246559" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>SCREAMING-KEBAB-CASE<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> that I only seem in COBOL or SQL;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8565612805696888487" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>SCREAMING_SNAKE_CASE<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> which is very common convention for constants;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5837840695343654079" datatype="html">
+        <source>Use computed for formatting</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3072646501334504242" datatype="html">
+        <source>Naive formatting will be done in the template. When it become more complex, traditional Angular coding style will encourage you to use Pipes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="722956993779473099" datatype="html">
+        <source>If you don&apos;t need to reuse the formatting logic, in modern Angular codebase, prefer <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>computed()<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to have something simpler and when you need to reuse the formatting logic extract it to a Pipe.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1435803266111090059" datatype="html">
+        <source>You can use pipes in yours computed if you need it: <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>computed(() =&gt; new DatePipe().transform(this.person().birthdate, &apos;dd/MM/yyyy&apos;))<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> will work if you need it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/simple-component.ts</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
